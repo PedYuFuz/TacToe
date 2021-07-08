@@ -15,18 +15,21 @@ public class tacToe {
         Scanner scanP22 = new Scanner(System.in);
 
         //String[] game = new String[9];
+        //Visual of tactoe - e will change to x or o
         String[] game = new String[]{"E ", "E ", "E "};
         String[] game2 = new String[]{"E ","E ","E "};
         String[] game3 = new String[]{"E ","E ","E "};
         
-        for(int i=0;i<9;i++){
+        //looping until finish
+        for(int i=0;i<6;i++){
+            //getting coord of the 1st player
             System.out.println("\nPlayer 1 plays(type the coods x and y (0-2))\nx:");
             x=(scanP1.nextInt());            
             System.out.println("y: ");
             y=(scanP12.nextInt());
             
             
-
+            //changing e by x or o, and looking for errors
             if(x==0 && game[y]=="E "){
                 game[y] = "X ";
             }else if(x==1 && game2[y]=="E "){
@@ -47,19 +50,19 @@ public class tacToe {
                 y=scanP12.nextInt();
             }
             
-            
+            //printing results after the move
             System.out.println(game[0]+game[1]+game[2]);
             System.out.println(game2[0]+game[1]+game[2]);
             System.out.print(game3[0]+game[1]+game[2]);
 
-            
+            //getting coord of the 2nd player
             System.out.println("\nPlayer 2 plays(type the coods)\nZ:");
             z=(scanP2.nextInt());            
             System.out.println("W: ");
             w=(scanP22.nextInt());   
             
            
-
+            //changing e by x or o, and looking for errors
             if(x==0 && game[y]=="E "){
                 game[y] = "X ";
             }else if(x==1 && game2[y]=="E "){
@@ -80,6 +83,7 @@ public class tacToe {
                 w=scanP22.nextInt(); 
             }
         
+            //printing results after the move
             System.out.println(game[0]+game[1]+game[2]);
             System.out.println(game2[0]+game2[1]+game2[2]);
             System.out.print(game3[0]+game3[1]+game3[2]);
