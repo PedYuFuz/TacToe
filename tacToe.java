@@ -52,8 +52,8 @@ public class tacToe {
             
             //printing results after the move
             System.out.println(game[0]+game[1]+game[2]);
-            System.out.println(game2[0]+game[1]+game[2]);
-            System.out.print(game3[0]+game[1]+game[2]);
+            System.out.println(game2[0]+game2[1]+game2[2]);
+            System.out.print(game3[0]+game3[1]+game3[2]);
 
             //getting coord of the 2nd player
             System.out.println("\nPlayer 2 plays(type the coods)\nZ:");
